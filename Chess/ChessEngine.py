@@ -368,11 +368,11 @@ def __eq__(self,other):
     return False
                 
             
-        #Basic notation   add proper notation later with captures and piece moves and removing pawn name + castling
-    def getChessNotation(self):
-            return self.getRankfile(self.startRow ,self.startCol) + self.getRankfile(self.endRow, self.endCol)
-            
-    def getRankfile(self, r, c):
-            return self.colsToFiles[c] + self.rowsToRanks[r]
+    #Basic notation   add proper notation later with captures and piece moves and removing pawn name + castling
+def getChessNotation(self):
+        return self.getRankfile(self.startRow ,self.startCol) + self.getRankfile(self.endRow, self.endCol)
+        
+def getRankfile(self, r, c):
+        return self.colsToFiles[c] + self.rowsToRanks[r]
             
         
