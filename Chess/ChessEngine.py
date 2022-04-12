@@ -362,10 +362,10 @@ class Move():
             
         #overriding the equals method because of the move class conflicting with mouse clicks
         
-    def __eq__(self,other):
-        if isinstance (other, Move):
-            return self.moveID == other.moveID
-        return False
+def __eq__(self,other):
+    if isinstance (other, Move):
+        return self.moveID == other.moveID
+    return False
                 
             
         #Basic notation   add proper notation later with captures and piece moves and removing pawn name + castling
